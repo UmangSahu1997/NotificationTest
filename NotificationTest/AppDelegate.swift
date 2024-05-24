@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         if launchOptions != nil {
             XX.kString = "Success"
+            print("lol")
         }
         let notifications = UNUserNotificationCenter.current()
         notifications.requestAuthorization(options: [.alert,.badge,.sound]) { success, err in
